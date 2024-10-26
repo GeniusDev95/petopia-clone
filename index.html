@@ -20,12 +20,40 @@
     </style>
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary " >
-        <div class="container-fluid fw-bold fs-5 response">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-1" >
+        <div class="container-fluid fw-bold fs-5 response ">
+          <div class="hide-1">
+          <div class=" d-flex align-items-center p-3  "  id="bar-1">
+            <ul class="navbar me-auto mb-2 mb-lg-0 gap-5 ">
+                
+                 
+              <li class="dropdown icon-link " style="--bs-link-color-rgb : 0, 0, 0;">
+                <a class="text-decoration-none icon-link-hover"  style="--bs-link-hover-color-rgb : 144, 88, 211;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bars fa-2xl " style="color: #9058d3;"></i>
+                </a>
+                <ul class="dropdown-menu p-2 ">
+                  <li><a class="dropdown-item" href="#">Our Services</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Our Shops</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Our Blogs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+              
+             
+              
+            </ul>
+              
+          </div>
+        </div>
           <a class="navbar-brand p-3 "  href="#"><img src="https://html.merku.love/petopia/assets/images/logo/logo.svg" alt="logo" ></a>
-          
-          <div class=" d-flex align-items-center p-3 " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 middle-div ">
+          <div class="hide-2">
+          <div class=" d-flex align-items-center p-3 " >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5  ">
                 <li class="dropdown icon-link " style="--bs-link-color-rgb :144, 88, 211;">
                     <a class="text-decoration-none dropdown-toggle icon-link-hover "  style="--bs-link-hover-color-rgb : 144, 88, 211;" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Home
@@ -92,6 +120,7 @@
             </ul>
               
           </div>
+          </div>
           <div class="dropdown  "  >
             <button class="cart_btn btn fw-bold " style="border-color: #9058d3; padding: 10px;" type="submit" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  <i class="fas fa-shopping-cart" style="color: #9058d3;" > </i> <span id="item-count"></span> Cart
@@ -99,7 +128,7 @@
             <!-- <a class="text-decoration-none dropdown-toggle icon-link-hover "  style="--bs-link-hover-color-rgb : 144, 88, 211;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pages
               </a> -->
-            <ul class="dropdown-menu cart_menu p-4" style="position: absolute; left: -350px; top: 70px; ">
+            <ul class="dropdown-menu cart_menu p-4 position-cart" id="position-cart">
                 <div class="row align-items-center ">
                   <div class="cart-item" style="font-weight:bold;"><span>Item Name</span><span>Quantity</span><span>Price</span></div>
                   <div id="cart-items" ></div>
@@ -119,6 +148,62 @@
             </div>
         </div>
       </nav>
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-2"  >
+        <div class="container-fluid fw-bold fs-5 response">
+          
+          <div class=" d-flex align-items-center p-3 " id="navbarSupportedContent">
+            <ul class="navbar me-auto mb-2 mb-lg-0 gap-5  ">
+                
+                 
+              <li class="dropdown icon-link " style="--bs-link-color-rgb : 0, 0, 0;">
+                <a class="text-decoration-none  icon-link-hover"  style="--bs-link-hover-color-rgb : 144, 88, 211;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bars fa-2xl" style="color: #9058d3;"></i>
+                </a>
+                <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" href="#">Our Services</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Our Shops</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Our Blogs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+              
+             
+              
+            </ul>
+              
+          </div>
+          <a class="navbar-brand p-3 "  href="#"><img src="https://html.merku.love/petopia/assets/images/logo/logo.svg" alt="logo" ></a>
+          
+          <div class="dropdown  "  >
+            <button class="cart_btn btn fw-bold " style="border-color: #9058d3; padding: 10px;" type="submit" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <i class="fas fa-shopping-cart" style="color: #9058d3;" > </i> <span id="item-count"></span> Cart
+            </button>
+            
+            <ul class="dropdown-menu cart_menu p-4" style="position: absolute; left: -350px; top: 70px; ">
+                <div class="row align-items-center ">
+                  <div class="cart-item" style="font-weight:bold;"><span>Item Name</span><span>Quantity</span><span>Price</span></div>
+                  <div id="cart-items" ></div>
+
+                <div class="d-flex justify-content-between  " >
+                    <div style="font-weight: 600;">
+                        Total Price:
+                    </div>
+                    <div style="color: #9058d3;">
+                      $<span id="total-price">0.00</span>
+                    </div>
+                </div>
+                <li><hr class="dropdown-divider"></li>
+                  <button id="clear-cart"  class="btn  p-1 clear-cart" style="background-color:#9058d3 ; border-color:#9058d3; color: white; font-weight: bold;" type="submit">Clear Cart</button>
+              </ul>
+
+            </div>
+        </div>
+      </nav> -->
       <div class="container " style="background-image: url(https://html.merku.love/petopia/assets/images/overlay/shapes_overlay_1.svg);">
       <div style="position: absolute; top: 220px; right: -50px; z-index: -1;" >
           <img  src="https://html.merku.love/petopia/assets/images/banner/cat_img_1.png" alt="cat_img_1">

@@ -60,7 +60,11 @@ h1, h2 {
   align-items: center;
 }
 
-
+#position-cart{
+  position: absolute; 
+  left: -350px; 
+  top: 70px;
+}
 
 /* #clear-cart {
     margin-top: 5px;
@@ -76,13 +80,18 @@ h1, h2 {
  .banner_res{
   font-size:80px; 
  }
+ /* .navbar-2{
+  display: none;
+ } */
+ 
  @media screen and (max-width: 1000px)  { 
-  .middle-div{
-    display: none;
-  }
+ 
   .banner_res{
     
     font-size: 50px;
+  }
+  .hide-2{
+    display: none;
   }
 
   
@@ -97,4 +106,27 @@ h1, h2 {
       font-size: small;
       /* padding: 100px; */
     }
+    #position-cart{
+      position: absolute; 
+      left: -240px; 
+      top: 70px;
+    }
+  }
+  @media screen and (max-width: 340px){
+    
+    .response a img{
+      display: none;
+    }
+    #position-cart{
+      position: absolute; 
+      left: -200px; 
+      top: 70px;
+    }
+    }
+  
+  @media screen and (min-width: 1001px){
+    .hide-1{
+      display: none;
+    }
+    
   }
