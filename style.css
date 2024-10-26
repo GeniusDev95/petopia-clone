@@ -1,7 +1,7 @@
 .product-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
   }
   
@@ -73,16 +73,24 @@ h1, h2 {
     display: none;
   }
  } */
+ .banner_res{
+  font-size:80px; 
+ }
  @media screen and (max-width: 1000px)  { 
   .middle-div{
     display: none;
   }
+  .banner_res{
+    
+    font-size: 50px;
+  }
+
   
   }
   @media screen and (max-width: 576px){
     
     .response a img{
-      height: 30px;
+      height: 40px;
     }
     .dropdown button{
       /* height: 30px; */
