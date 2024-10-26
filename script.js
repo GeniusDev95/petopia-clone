@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('cart-item');
             itemDiv.innerHTML = `<span>${name}</span> <span>${quantity}</span> <span>$${(price * quantity).toFixed(2)}  </span> `;
-            cartItemsDiv.appendChild(itemDiv);
+            // cartItemsDiv.appendChild(itemDiv); 
+            document.getElementById('cart-items').appendChild(document.createElement('div')) ;
         }
     }
 

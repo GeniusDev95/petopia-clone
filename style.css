@@ -67,3 +67,26 @@ h1, h2 {
     width: 100px;
     align-items: center;
 } */
+
+/* @include media-breakpoint-down(sm) {
+  #navbarSupportedContent{
+    display: none;
+  }
+ } */
+ @media screen and (max-width: 1000px)  { 
+  .middle-div{
+    display: none;
+  }
+  
+  }
+  @media screen and (max-width: 576px){
+    
+    .response a img{
+      height: 30px;
+    }
+    .dropdown button{
+      /* height: 30px; */
+      font-size: small;
+      /* padding: 100px; */
+    }
+  }
