@@ -1,3 +1,10 @@
+.body{
+  padding: 0%;
+  margin: 0%;
+}
+
+
+
 .product-cards {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +72,9 @@ h1, h2 {
   left: -350px; 
   top: 70px;
 }
-
+#card-width{
+  width: 300px;
+}
 /* #clear-cart {
     margin-top: 5px;
     width: 100px;
@@ -111,6 +120,9 @@ h1, h2 {
       left: -240px; 
       top: 70px;
     }
+    #card-width{
+      width: 250px;
+    }
   }
   @media screen and (max-width: 340px){
     
@@ -121,6 +133,9 @@ h1, h2 {
       position: absolute; 
       left: -200px; 
       top: 70px;
+    }
+    #card-width{
+      width: 200px;
     }
     }
   
