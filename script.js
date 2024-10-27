@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Get the product name and price from the product elements
                 const productName = this.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
                 const productPrice = parseFloat(this.previousElementSibling.getAttribute('data-price'));
-                console.log("price", productPrice)
+                
                 // Update quantity and total price
                 if (cart[productName]) {
                     cart[productName].quantity += 1; // Increase quantity
@@ -51,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('cart-item');
             itemDiv.innerHTML = `<span>${name}</span> <span>${quantity}</span> <span>$${(price * quantity).toFixed(2)}  </span> `;
-            // cartItemsDiv.appendChild(itemDiv); 
-            document.getElementById('cart-items').appendChild(document.createElement('div')) ;
+            cartItemsDiv.appendChild(itemDiv); 
+            // document.getElementById('cart-items').appendChild(document.createElement('div')) ;
+            // console.log(name, price)
         }
     }
 
